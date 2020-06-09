@@ -10,6 +10,10 @@ describe("Suite de testes de adição", function () {
         expect(Calculador.adicionar("9", "-3")).toEqual(6)
     })
 
+    it("deve retornar 3 para 1.5 e 1.5", function () {
+        expect(Calculador.adicionar(1.5, 1.5)).toEqual(3)
+    })
+
     it("deve retornar 0 quando valor 1 não for numérico", function () {
         expect(Calculador.adicionar(undefined, 10)).toEqual(0)
     })
